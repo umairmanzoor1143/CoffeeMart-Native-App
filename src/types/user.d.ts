@@ -1,0 +1,3 @@
+type IUser = {
+  name: string
+}
