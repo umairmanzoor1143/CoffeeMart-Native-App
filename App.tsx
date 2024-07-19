@@ -4,7 +4,9 @@ import { Router } from './src/routes/Router';
 import { AuthProvider } from './src/contexts/Auth';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 // import AsyncStorage from "@react-native-async-storage/async-storage";
-
+if (__DEV__) {
+  require('./ReactotronConfig');
+}
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
